@@ -40,7 +40,7 @@ To avoid version conflicts with any packages, we recommend to use [Spack](https:
 Use the following commands to get source code and build DrCCTProf:
 
 ```console
-$ git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
+$ git clone --recurse https://github.com/yyzdtccjdtc/DrCCTProf_CSE_165.git
 ```
 
 ```console
@@ -56,7 +56,7 @@ To run DrCCTProf, one needs to use the following command:
 #### 1 Set the global environment variable
 
 ```console
-$ export drrun=/path/to/DrCCTProf/build/bin64/drrun
+$ export drrun=/path/to/DrCCTProf_CSE_165/build/bin64/drrun
 ```
 
 #### 2 Run client tool
@@ -64,7 +64,7 @@ $ export drrun=/path/to/DrCCTProf/build/bin64/drrun
 -   **x86_64**
 
 ```console
-$ $drrun -t <client tool> -- <application> [apllication args]
+$ $drrun -t <client tool> -- <application> [application args]
 ```
 
 e.g. The command below will start the client **drcctlib_instr_statistics_clean_call** to analyze **echo _"Hello World!"_**.
@@ -76,7 +76,7 @@ $ $drrun -t drcctlib_instr_statistics_clean_call -- echo "Hello World!"
 -   **aarch64**
 
 ```console
-$ $drrun -unsafe_build_ldstex -t <client tool> -- <application> [apllication args]
+$ $drrun -unsafe_build_ldstex -t <client tool> -- <application> [application args]
 ```
 
 ## Client tools
