@@ -1,0 +1,1141 @@
+ClientInit
+********** Dump Data from Thread 0 **********
+
+Total write bytes = 1287075
+
+Total redundant bytes = 233372
+
+Total redundant bytes ratio= 18.131966 %
+
+========== (85.700084) % ==========
+Redundancy bytes = 200000
+#0   0x00007fa70f39f078 "mov    dword ptr [rdx+rax*4], eax" in main at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:17]
+#1   0x00007fa70fbde0b1 "call   rax" in __libc_start_main at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa70f39f168 "call   <rel> qword ptr [0x00007fa70f3a1fe0]" in _start at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:44]
+#3   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 2181
+--------------------Redundantly written by--------------------
+#0   0x00007fa70f39f0d7 "mov    dword ptr [rax-0x04], edx" in main at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:30]
+#1   0x00007fa70fbde0b1 "call   rax" in __libc_start_main at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa70f39f168 "call   <rel> qword ptr [0x00007fa70f3a1fe0]" in _start at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:44]
+#3   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 2185
+
+========== (0.551909) % ==========
+Redundancy bytes = 1288
+#0   0x00007fa7134a2559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1737
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1737
+
+========== (0.275954) % ==========
+Redundancy bytes = 644
+#0   0x00007fa7134a2549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1736
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1736
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a2503 "mov    qword ptr [rsp+0x28], r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1732
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2503 "mov    qword ptr [rsp+0x28], r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1732
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a24c0 "push   r15" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1722
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24c0 "push   r15" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1722
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a31df "push   qword ptr [rsp+0x28]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1719
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31df "push   qword ptr [rsp+0x28]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1719
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a314e "movaps oword ptr [rsp+0x50], xmm0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1713
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a314e "movaps oword ptr [rsp+0x50], xmm0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1713
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a30d4 "push   r15" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1701
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30d4 "push   r15" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1701
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a24cb "push   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1726
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24cb "push   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1726
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a24c2 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1723
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24c2 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1723
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a31bb "push   qword ptr [rsp+0x10]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1715
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31bb "push   qword ptr [rsp+0x10]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1715
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a24f2 "mov    qword ptr [rsp+0x50], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1730
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24f2 "mov    qword ptr [rsp+0x50], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1730
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a24c7 "push   r13" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1724
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24c7 "push   r13" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1724
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a30e3 "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1706
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30e3 "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1706
+
+========== (0.257100) % ==========
+Redundancy bytes = 600
+#0   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1700
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1700
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a24cc "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1727
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a24cc "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1727
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a30f8 "mov    qword ptr [rsp+0x08], r8" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1709
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30f8 "mov    qword ptr [rsp+0x08], r8" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1709
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a4f0d "push   0x09" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1699
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4f0d "push   0x09" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1699
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a30d6 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1702
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30d6 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1702
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a31cc "push   rdi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1716
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31cc "push   rdi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1716
+
+========== (0.253672) % ==========
+Redundancy bytes = 592
+#0   0x00007fa7134a30f3 "mov    qword ptr [rsp+0x18], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1708
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30f3 "mov    qword ptr [rsp+0x18], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1708
+
+========== (0.243388) % ==========
+Redundancy bytes = 568
+#0   0x00007fa7134a27fc "mov    qword ptr [rsp+0xd0], rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1742
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a27fc "mov    qword ptr [rsp+0xd0], rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1742
+
+========== (0.243388) % ==========
+Redundancy bytes = 568
+#0   0x00007fa7134a27ef "mov    qword ptr [rsp+0x70], r11" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1741
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a27ef "mov    qword ptr [rsp+0x70], r11" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1741
+
+========== (0.239960) % ==========
+Redundancy bytes = 560
+#0   0x00007fa7134a2330 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1751
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2330 "push   r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1751
+
+========== (0.239960) % ==========
+Redundancy bytes = 560
+#0   0x00007fa7134a2862 "push   rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1746
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2862 "push   rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1746
+
+========== (0.239960) % ==========
+Redundancy bytes = 560
+#0   0x00007fa7134a31db "push   rdi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1718
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2814 "mov    qword ptr [rsp+0x38], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1744
+
+========== (0.239960) % ==========
+Redundancy bytes = 560
+#0   0x00007fa7134a2866 "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1747
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2866 "push   rbx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1747
+
+========== (0.236532) % ==========
+Redundancy bytes = 552
+#0   0x00007fa7134a2814 "mov    qword ptr [rsp+0x38], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1744
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31db "push   rdi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1718
+
+========== (0.236532) % ==========
+Redundancy bytes = 552
+#0   0x00007fa7134a284c "push   qword ptr [rsp+0x40]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1745
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a284c "push   qword ptr [rsp+0x40]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1745
+
+========== (0.229676) % ==========
+Redundancy bytes = 536
+#0   0x00007fa7134a31cd "push   qword ptr [rsp+0xe8]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1717
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31cd "push   qword ptr [rsp+0xe8]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1717
+
+========== (0.229676) % ==========
+Redundancy bytes = 536
+#0   0x00007fa7134a30e2 "push   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1705
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30e2 "push   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1705
+
+========== (0.215964) % ==========
+Redundancy bytes = 504
+#0   0x00007fa7134a4ec9 "mov    dword ptr [r15+0x00000410], r9d" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1696
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4f18 "mov    qword ptr [r15+0x00000418], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1763
+
+========== (0.212536) % ==========
+Redundancy bytes = 496
+#0   0x00007fa7134a279e "movaps oword ptr [rax], xmm0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1759
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a279e "movaps oword ptr [rax], xmm0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1759
+
+========== (0.209108) % ==========
+Redundancy bytes = 488
+#0   0x00007fa7134a233f "push   r12" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1753
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a233f "push   r12" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1753
+
+========== (0.205680) % ==========
+Redundancy bytes = 480
+#0   0x00007fa7134a286b "push   rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1749
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a286b "push   rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1749
+
+========== (0.205680) % ==========
+Redundancy bytes = 480
+#0   0x00007fa7134a2867 "push   qword ptr [rsp+0x20]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1748
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2867 "push   qword ptr [rsp+0x20]" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1748
+
+========== (0.202252) % ==========
+Redundancy bytes = 472
+#0   0x00007fa7134a2457 "call   0x00007fa7134b65f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1756
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2457 "call   0x00007fa7134b65f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a2885 "call   0x00007fa7134a2330" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1756
+
+========== (0.198824) % ==========
+Redundancy bytes = 464
+#0   0x00007fa7134a4f22 "mov    qword ptr [r15+0x00000420], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1764
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4f22 "mov    qword ptr [r15+0x00000420], rcx" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1764
+
+========== (0.195396) % ==========
+Redundancy bytes = 456
+#0   0x00007fa7134a31e3 "push   rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1720
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a31e3 "push   rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1720
+
+========== (0.195396) % ==========
+Redundancy bytes = 456
+#0   0x00007fa7134a30fd "mov    dword ptr [rsp+0x38], r9d" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1710
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a30fd "mov    dword ptr [rsp+0x38], r9d" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1710
+
+========== (0.133692) % ==========
+Redundancy bytes = 312
+#0   0x00007fa7134a4c86 "mov    qword ptr [r14], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1781
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4c86 "mov    qword ptr [r14], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1781
+
+========== (0.128550) % ==========
+Redundancy bytes = 300
+#0   0x00007fa7134a253a "mov    dword ptr [rsp+0x84], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1735
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a253a "mov    dword ptr [rsp+0x84], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1735
+
+========== (0.121694) % ==========
+Redundancy bytes = 284
+#0   0x00007fa7134a27d6 "mov    qword ptr [rsp+0x68], r13" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1740
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a27d6 "mov    qword ptr [rsp+0x68], r13" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1740
+
+========== (0.114838) % ==========
+Redundancy bytes = 268
+#0   0x00007fa7134a3132 "add    <rel> qword ptr [0x00007fa7134c59d0], 0x01" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1711
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a3132 "add    <rel> qword ptr [0x00007fa7134c59d0], 0x01" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1711
+
+========== (0.113124) % ==========
+Redundancy bytes = 264
+#0   0x00007fa7134a4ed4 "mov    qword ptr [r15+0x00000408], r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1697
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a4ed4 "mov    qword ptr [r15+0x00000408], r14" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1697
+
+========== (0.113124) % ==========
+Redundancy bytes = 264
+
+Prepopulated with by OS
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134aa406 "mov    dword ptr [rdx+0x08], edi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134aa588 "call   0x00007fa7134a9dc0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa713498dc7 "call   0x00007fa7134aa540" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b4db0 "call   rsi" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa71349b2cf "call   0x00007fa7134b4d80" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1576
+
+========== (0.061704) % ==========
+Redundancy bytes = 144
+#0   0x00007fa7134a2559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349bc09 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1945
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349bc09 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1945
+
+========== (0.054848) % ==========
+Redundancy bytes = 128
+#0   0x00007fa7134a5194 "mov    qword ptr [rsi], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1766
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a5194 "mov    qword ptr [rsi], rax" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa71349b525 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1766
+
+========== (0.051420) % ==========
+Redundancy bytes = 120
+
+Prepopulated with by OS
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a7ceb "mov    qword ptr [r14+rdx+0x08], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a1085 "call   0x00007fa7134a7770" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa71349ae69 "call   0x00007fa7134a1050" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 901
+
+========== (0.030852) % ==========
+Redundancy bytes = 72
+#0   0x00007fa7134a2549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349bc09 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+dead context: 1944
+--------------------Redundantly written by--------------------
+#0   0x00007fa7134a2549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#1   0x00007fa7134a31e4 "call   0x00007fa7134a24c0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#2   0x00007fa7134a4f0f "call   0x00007fa7134a30d0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#3   0x00007fa71349bc09 "call   0x00007fa7134a49e0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#4   0x00007fa7134b3c39 "call   rbp" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#5   0x00007fa713499047 "call   0x00007fa7134b36f0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#6   0x00007fa713498103 "call   0x00007fa713498df0" in <MISSING> at [/home/yyang/yyang/CSE_165/DrCCTProf_CSE_165/CSE_165_test_app/storespy_test/storespy_test.cpp:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2014707]_ROOT_CTXT at [<NULL>:0]
+kill context: 1944
+
+*************** Dump Data(delta=1.00%) from Thread 0 ****************
+
+Total write bytes = 1287075
+
+Total redundant bytes = 0
+
+Total redundant bytes ratio= 0.000000 %
+ClientExit

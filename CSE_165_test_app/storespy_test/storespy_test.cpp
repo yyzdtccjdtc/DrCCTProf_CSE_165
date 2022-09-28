@@ -1,4 +1,4 @@
-//gcc -g storespy_test.cpp -o storespy_test
+//gcc -g -O2 storespy_test.cpp -o storespy_test
 
 #include <stdio.h>
 #include <math.h>

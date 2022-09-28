@@ -1,4 +1,4 @@
-//gcc -g storespy_test.cpp -o storespy_test
+//gcc -g -O2 storespy_test_optimization.cpp -o storespy_test_optimization
 
 #include <stdio.h>
 #include <math.h>
@@ -13,7 +13,7 @@ int myArray3[100000];
 int sum;
 
 void initialize() {
-	for (int i = 0; i < 100000; i++){
+    for (int i = 0; i < 100000; i++){
         myArray[i] = i;
     } 
 	for (int i = 0; i < 100000; i++){

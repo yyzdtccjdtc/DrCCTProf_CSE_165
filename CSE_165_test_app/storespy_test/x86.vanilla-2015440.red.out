@@ -1,0 +1,1148 @@
+ClientInit
+********** Dump Data from Thread 0 **********
+
+Total write bytes = 1087071
+
+Total redundant bytes = 33372
+
+Total redundant bytes ratio= 3.069901 %
+
+========== (3.859523) % ==========
+Redundancy bytes = 1288
+#0   0x00007f3f11758559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1737
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1737
+
+========== (1.929761) % ==========
+Redundancy bytes = 644
+#0   0x00007f3f11758549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1736
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1736
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f1175914e "movaps oword ptr [rsp+0x50], xmm0" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1713
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175914e "movaps oword ptr [rsp+0x50], xmm0" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1713
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117590e3 "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1706
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590e3 "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1706
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117591df "push   qword ptr [rsp+0x28]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1719
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591df "push   qword ptr [rsp+0x28]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1719
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1700
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1700
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f11758503 "mov    qword ptr [rsp+0x28], r14" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1732
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758503 "mov    qword ptr [rsp+0x28], r14" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1732
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117590d4 "push   r15" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1701
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590d4 "push   r15" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1701
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117584cb "push   rbp" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1726
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584cb "push   rbp" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1726
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117591bb "push   qword ptr [rsp+0x10]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1715
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591bb "push   qword ptr [rsp+0x10]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1715
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117584f2 "mov    qword ptr [rsp+0x50], rcx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1730
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584f2 "mov    qword ptr [rsp+0x50], rcx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1730
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117584c7 "push   r13" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1724
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584c7 "push   r13" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1724
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117584c2 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1723
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584c2 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1723
+
+========== (1.797914) % ==========
+Redundancy bytes = 600
+#0   0x00007f3f117584c0 "push   r15" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1722
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584c0 "push   r15" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1722
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f117590d6 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1702
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590d6 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1702
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f117590f3 "mov    qword ptr [rsp+0x18], rcx" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1708
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590f3 "mov    qword ptr [rsp+0x18], rcx" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1708
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f117591cc "push   rdi" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1716
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591cc "push   rdi" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1716
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f117590f8 "mov    qword ptr [rsp+0x08], r8" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1709
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590f8 "mov    qword ptr [rsp+0x08], r8" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1709
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f117584cc "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1727
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117584cc "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1727
+
+========== (1.773942) % ==========
+Redundancy bytes = 592
+#0   0x00007f3f1175af0d "push   0x09" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1699
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175af0d "push   0x09" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1699
+
+========== (1.702026) % ==========
+Redundancy bytes = 568
+#0   0x00007f3f117587fc "mov    qword ptr [rsp+0xd0], rbp" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1742
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117587fc "mov    qword ptr [rsp+0xd0], rbp" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1742
+
+========== (1.702026) % ==========
+Redundancy bytes = 568
+#0   0x00007f3f117587ef "mov    qword ptr [rsp+0x70], r11" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1741
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117587ef "mov    qword ptr [rsp+0x70], r11" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1741
+
+========== (1.678053) % ==========
+Redundancy bytes = 560
+#0   0x00007f3f117591db "push   rdi" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1718
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758814 "mov    qword ptr [rsp+0x38], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1744
+
+========== (1.678053) % ==========
+Redundancy bytes = 560
+#0   0x00007f3f11758330 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1751
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758330 "push   r14" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1751
+
+========== (1.678053) % ==========
+Redundancy bytes = 560
+#0   0x00007f3f11758862 "push   rcx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1746
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758862 "push   rcx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1746
+
+========== (1.678053) % ==========
+Redundancy bytes = 560
+#0   0x00007f3f11758866 "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1747
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758866 "push   rbx" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1747
+
+========== (1.654081) % ==========
+Redundancy bytes = 552
+#0   0x00007f3f11758814 "mov    qword ptr [rsp+0x38], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1744
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591db "push   rdi" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1718
+
+========== (1.654081) % ==========
+Redundancy bytes = 552
+#0   0x00007f3f1175884c "push   qword ptr [rsp+0x40]" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1745
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175884c "push   qword ptr [rsp+0x40]" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1745
+
+========== (1.606137) % ==========
+Redundancy bytes = 536
+#0   0x00007f3f117590e2 "push   rbp" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1705
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590e2 "push   rbp" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1705
+
+========== (1.606137) % ==========
+Redundancy bytes = 536
+#0   0x00007f3f117591cd "push   qword ptr [rsp+0xe8]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1717
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591cd "push   qword ptr [rsp+0xe8]" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1717
+
+========== (1.510248) % ==========
+Redundancy bytes = 504
+#0   0x00007f3f1175aec9 "mov    dword ptr [r15+0x00000410], r9d" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1696
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175af18 "mov    qword ptr [r15+0x00000418], rax" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1763
+
+========== (1.486276) % ==========
+Redundancy bytes = 496
+#0   0x00007f3f1175879e "movaps oword ptr [rax], xmm0" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1759
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175879e "movaps oword ptr [rax], xmm0" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1759
+
+========== (1.462304) % ==========
+Redundancy bytes = 488
+#0   0x00007f3f1175833f "push   r12" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1753
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175833f "push   r12" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1753
+
+========== (1.438332) % ==========
+Redundancy bytes = 480
+#0   0x00007f3f1175886b "push   rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1749
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175886b "push   rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1749
+
+========== (1.438332) % ==========
+Redundancy bytes = 480
+#0   0x00007f3f11758867 "push   qword ptr [rsp+0x20]" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1748
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758867 "push   qword ptr [rsp+0x20]" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1748
+
+========== (1.414359) % ==========
+Redundancy bytes = 472
+#0   0x00007f3f11758457 "call   0x00007f3f1176c5f0" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1756
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758457 "call   0x00007f3f1176c5f0" in <MISSING> at [:0]
+#1   0x00007f3f11758885 "call   0x00007f3f11758330" in <MISSING> at [:0]
+#2   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#3   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#4   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1756
+
+========== (1.390387) % ==========
+Redundancy bytes = 464
+#0   0x00007f3f1175af22 "mov    qword ptr [r15+0x00000420], rcx" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1764
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175af22 "mov    qword ptr [r15+0x00000420], rcx" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1764
+
+========== (1.366415) % ==========
+Redundancy bytes = 456
+#0   0x00007f3f117591e3 "push   rax" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1720
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117591e3 "push   rax" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1720
+
+========== (1.366415) % ==========
+Redundancy bytes = 456
+#0   0x00007f3f117590fd "mov    dword ptr [rsp+0x38], r9d" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1710
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117590fd "mov    dword ptr [rsp+0x38], r9d" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1710
+
+========== (0.934915) % ==========
+Redundancy bytes = 312
+#0   0x00007f3f1175ac86 "mov    qword ptr [r14], rax" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1781
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175ac86 "mov    qword ptr [r14], rax" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1781
+
+========== (0.898957) % ==========
+Redundancy bytes = 300
+#0   0x00007f3f1175853a "mov    dword ptr [rsp+0x84], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1735
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175853a "mov    dword ptr [rsp+0x84], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1735
+
+========== (0.851013) % ==========
+Redundancy bytes = 284
+#0   0x00007f3f117587d6 "mov    qword ptr [rsp+0x68], r13" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1740
+--------------------Redundantly written by--------------------
+#0   0x00007f3f117587d6 "mov    qword ptr [rsp+0x68], r13" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1740
+
+========== (0.803068) % ==========
+Redundancy bytes = 268
+#0   0x00007f3f11759132 "add    <rel> qword ptr [0x00007f3f1177b9d0], 0x01" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1711
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11759132 "add    <rel> qword ptr [0x00007f3f1177b9d0], 0x01" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1711
+
+========== (0.791082) % ==========
+Redundancy bytes = 264
+
+Prepopulated with by OS
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11760406 "mov    dword ptr [rdx+0x08], edi" in <MISSING> at [:0]
+#1   0x00007f3f11760588 "call   0x00007f3f1175fdc0" in <MISSING> at [:0]
+#2   0x00007f3f1174edc7 "call   0x00007f3f11760540" in <MISSING> at [:0]
+#3   0x00007f3f1176adb0 "call   rsi" in <MISSING> at [:0]
+#4   0x00007f3f117512cf "call   0x00007f3f1176ad80" in <MISSING> at [:0]
+#5   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#6   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#7   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#8   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#9   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1576
+
+========== (0.791082) % ==========
+Redundancy bytes = 264
+#0   0x00007f3f1175aed4 "mov    qword ptr [r15+0x00000408], r14" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1697
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175aed4 "mov    qword ptr [r15+0x00000408], r14" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1697
+
+========== (0.431499) % ==========
+Redundancy bytes = 144
+#0   0x00007f3f11758559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1945
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758559 "mov    qword ptr [rsp+0x18], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1945
+
+========== (0.383555) % ==========
+Redundancy bytes = 128
+#0   0x00007f3f1175b194 "mov    qword ptr [rsi], rax" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1766
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175b194 "mov    qword ptr [rsi], rax" in <MISSING> at [:0]
+#1   0x00007f3f11751525 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#2   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#3   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#4   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#5   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1766
+
+========== (0.359583) % ==========
+Redundancy bytes = 120
+
+Prepopulated with by OS
+--------------------Redundantly written by--------------------
+#0   0x00007f3f1175dceb "mov    qword ptr [r14+rdx+0x08], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f11757085 "call   0x00007f3f1175d770" in <MISSING> at [:0]
+#2   0x00007f3f11750e69 "call   0x00007f3f11757050" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 901
+
+========== (0.215750) % ==========
+Redundancy bytes = 72
+#0   0x00007f3f117591db "push   rdi" in <MISSING> at [:0]
+#1   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#2   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#3   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#4   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#5   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#6   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1926
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758814 "mov    qword ptr [rsp+0x38], rax" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1952
+
+========== (0.215750) % ==========
+Redundancy bytes = 72
+#0   0x00007f3f11758549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+dead context: 1944
+--------------------Redundantly written by--------------------
+#0   0x00007f3f11758549 "mov    qword ptr [rsp+0x88], 0x00000000" in <MISSING> at [:0]
+#1   0x00007f3f117591e4 "call   0x00007f3f117584c0" in <MISSING> at [:0]
+#2   0x00007f3f1175af0f "call   0x00007f3f117590d0" in <MISSING> at [:0]
+#3   0x00007f3f11751c09 "call   0x00007f3f1175a9e0" in <MISSING> at [:0]
+#4   0x00007f3f11769c39 "call   rbp" in <MISSING> at [:0]
+#5   0x00007f3f1174f047 "call   0x00007f3f117696f0" in <MISSING> at [:0]
+#6   0x00007f3f1174e103 "call   0x00007f3f1174edf0" in <MISSING> at [:0]
+#7   0xffffffffffffffff "<NULL>" in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 "<NULL>" in PROCESS[2015440]_ROOT_CTXT at [<NULL>:0]
+kill context: 1944
+
+*************** Dump Data(delta=1.00%) from Thread 0 ****************
+
+Total write bytes = 1087071
+
+Total redundant bytes = 0
+
+Total redundant bytes ratio= 0.000000 %
+ClientExit
