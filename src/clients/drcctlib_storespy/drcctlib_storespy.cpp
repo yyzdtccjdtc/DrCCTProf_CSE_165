@@ -147,6 +147,7 @@ static unordered_map<uint64_t, uint64_t> RedMap[THREAD_MAX];
 static unordered_map<uint64_t, uint64_t> ApproxRedMap[THREAD_MAX];
 
 static void AddToRedTable(uint64_t key, uint16_t value, int threadID){
+    // if the pair exits, then update the total bytes. otherwise add a new element
     unordered_map<uint64_t, uint64_t>::iterator it = RedMap[threadID].find(key);
     if (it == RedMap[threadID].end()) {
         RedMap[threadID][key] = value;
@@ -157,6 +158,7 @@ static void AddToRedTable(uint64_t key, uint16_t value, int threadID){
 }
 
 static void AddToApproxRedTable(uint64_t key, uint16_t value, int threadID){
+    // if the pair exits, then update the total bytes. otherwise add a new element
     unordered_map<uint64_t, uint64_t>::iterator it = ApproxRedMap[threadID].find(key);
     if (it == ApproxRedMap[threadID].end()) {
         ApproxRedMap[threadID][key] = value;
@@ -212,13 +214,14 @@ static uint8_t* GetOrCreateShadowBaseAddress(uint64_t addr){
 template<class T, uint16_t AccessLen, uint32_t bufferOffset, bool isApprox>
 struct RedSpyAnalysis{
     static void RecordNByteValueBeforeWrite(void *addr, void* drcontext, uint32_t memOp){
+        //record the value in the memory before the memory write
         per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
         pt->bytesWritten += AccessLen;
-
+        // create the shadow address
         tuple<uint8_t[SHADOW_PAGE_SIZE_ML], uint64_t[SHADOW_PAGE_SIZE_ML], context_handle_t[SHADOW_PAGE_SIZE_ML]> &t = sm.GetOrCreateShadowBaseAddress((uint64_t)addr);
         uint8_t * __restrict__ shadowAddr = &(get<0>(t)[PAGE_OFFSET_ML((uint64_t)addr)]); // the shadow addres of a data object
         context_handle_t * __restrict__ pre_ctxt_hndl = &(get<2>(t)[PAGE_OFFSET_ML((uint64_t)addr)]);
-
+        //read the value by using the addr and memory operation size and the store it into shadow memory
         if (isApprox) {
             if(AccessLen == ZMM_VEC_LEN || AccessLen == YMM_VEC_LEN || AccessLen == XMM_VEC_LEN){
                 T * __restrict__ oldValue = reinterpret_cast<T*> (shadowAddr);
@@ -252,14 +255,19 @@ struct RedSpyAnalysis{
     }
     
     static void CheckNByteValueAfterWrite(void* opAddr, void* drcontext, context_handle_t cur_ctxt_hndl, uint32_t memOp){
-        if(!Sample_flag){
-            return;
-        }
+        // if(!Sample_flag){
+        //     return;
+        // }
+        
+        //compare the value after memory write with the value in the shadow memory
         bool isRedundantWrite = false;
         per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
+        
+        //get the shadow address
         tuple<uint8_t[SHADOW_PAGE_SIZE_ML], uint64_t[SHADOW_PAGE_SIZE_ML], context_handle_t[SHADOW_PAGE_SIZE_ML]> &t = sm.GetOrCreateShadowBaseAddress((uint64_t)opAddr);
         uint8_t * __restrict__ shadowAddr = &(get<0>(t)[PAGE_OFFSET_ML((uint64_t)opAddr)]); // the shadow addres of a data object
         context_handle_t * __restrict__ pre_ctxt_hndl = &(get<2>(t)[PAGE_OFFSET_ML((uint64_t)opAddr)]);
+        // do the comparison and return a bool value isRedundantWrite
         if(isApprox) {
             // return false;
             if(AccessLen == ZMM_VEC_LEN || AccessLen == YMM_VEC_LEN || AccessLen == XMM_VEC_LEN){
@@ -322,6 +330,7 @@ struct RedSpyAnalysis{
         int threadID = drcctlib_get_thread_id();
         context_handle_t *prevIP = (context_handle_t*)(status + PAGE_OFFSET((uint64_t)opAddr) * sizeof(context_handle_t));
         bool isAccessWithinPageBoundary = IS_ACCESS_WITHIN_PAGE_BOUNDARY((uint64_t)opAddr, AccessLen);
+        // if is redundant write then add to redundent table
         if (isRedundantWrite) {
             // redundancy detected
             if(isAccessWithinPageBoundary){
@@ -397,6 +406,8 @@ struct RedSpyAnalysis{
 };
 
 static void RecordValueBeforeLargeWrite(void *addr, uint16_t AccessLen, void* drcontext, uint32_t memOp){
+    //special case for large memroy write
+    
     per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
     pt->bytesWritten += AccessLen;
 
@@ -407,6 +418,7 @@ static void RecordValueBeforeLargeWrite(void *addr, uint16_t AccessLen, void* dr
 }
 
 static void CheckAfterLargeWrite(void* opAddr, uint16_t AccessLen, void* drcontext, context_handle_t cur_ctxt_hndl, uint32_t memOp){
+    //special case for large memroy write
     bool isRedundantWrite = false;
     per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
 
@@ -438,7 +450,7 @@ static void CheckAfterLargeWrite(void* opAddr, uint16_t AccessLen, void* drconte
 template<uint32_t readBufferSlotIndex>
 struct RedSpyInstrument{
     static void InstrumentValueBeforeWriting(void *drcontext, context_handle_t cur_ctxt_hndl, mem_ref_t *ref, uint32_t memOp, int32_t float_instr_and_ok_to_appx, int32_t is_float){
-        // get address and size of memOp
+        //different cases for different data type and size
         void *addr = ref->addr;
         uint32_t refSize = ref->size;
         if(float_instr_and_ok_to_appx == 1) {
@@ -500,6 +512,8 @@ struct RedSpyInstrument{
 
     }
     static void InstrumentValueAfterWriting(void *drcontext, context_handle_t cur_ctxt_hndl, op_ref *opList, uint32_t memOp, int32_t float_instr_and_ok_to_appx, int32_t is_float){
+        
+        //different cases for different data type and size
         void *opAddr = opList->opAddr;
         uint32_t opSize = opList->opSize;
         if(float_instr_and_ok_to_appx == 1) {
@@ -628,10 +642,13 @@ AfterWrite(void *drcontext, context_handle_t cur_ctxt_hndl, op_ref *opList, int3
 void
 InsertCleancall(int32_t slot, int32_t num, int32_t num_write, int32_t float_instr_and_ok_to_appx, int32_t is_float, int32_t IsCld)
 {
+    //get the drcontext
     void *drcontext = dr_get_current_drcontext();
+    //get pt from drcontext
     per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
+    //get context_handle from drcontext
     context_handle_t cur_ctxt_hndl = drcctlib_get_context_handle(drcontext, slot);
-    context_handle_t prev_ctxt_hndl = drcctlib_get_context_handle(drcontext, (slot - 1));
+    // context_handle_t prev_ctxt_hndl = drcctlib_get_context_handle(drcontext, (slot - 1));
     
     if (IsCld == 1){
         BUF_PTR(pt->cur_buf, mem_ref_t, INSTRACE_TLS_OFFS_BUF_PTR) = pt->cur_buf_list;
@@ -643,13 +660,16 @@ InsertCleancall(int32_t slot, int32_t num, int32_t num_write, int32_t float_inst
         return;
     }
 #endif
-
+    // do the analysis after the memory writes
+    //*** For LoadSpy *** : we don't neet it
     for (int i = 0; i < memOp_num; i++){
         if(pt->opList[i].opAddr != 0) {
             AfterWrite(drcontext, cur_ctxt_hndl, &pt->opList[i], num, num_write, pt->float_instr_and_ok_to_appx, pt->is_float);
             // AfterWrite(drcontext, prev_ctxt_hndl, &pt->opList[i], num, num_write);
         }
     }
+    // do the analysis before the memory write
+    //*** For LoadSpy *** : we need to compare the value before the memory read
     for (int i = 0; i < num; i++) {
         if (pt->cur_buf_list[i].addr != 0) {
             // store the addr and size of ops in opList[]
@@ -673,6 +693,7 @@ static void
 InstrumentMem(void *drcontext, instrlist_t *ilist, instr_t *where, opnd_t ref)
 {
     /* We need two scratch registers */
+    //reserve two register for instrumentation
     reg_id_t reg_mem_ref_ptr, free_reg;
     if (drreg_reserve_register(drcontext, ilist, where, NULL, &reg_mem_ref_ptr) !=
             DRREG_SUCCESS ||
@@ -680,6 +701,7 @@ InstrumentMem(void *drcontext, instrlist_t *ilist, instr_t *where, opnd_t ref)
             DRREG_SUCCESS) {
         DRCCTLIB_EXIT_PROCESS("InstrumentMem drreg_reserve_register != DRREG_SUCCESS");
     }
+    //get the memory address and store it into free_reg
     if (!drutil_insert_get_mem_addr(drcontext, ilist, where, ref, free_reg,
                                     reg_mem_ref_ptr)) {
         MINSERT(ilist, where,
@@ -688,17 +710,18 @@ InstrumentMem(void *drcontext, instrlist_t *ilist, instr_t *where, opnd_t ref)
     }
     dr_insert_read_raw_tls(drcontext, ilist, where, tls_seg,
                            tls_offs + INSTRACE_TLS_OFFS_BUF_PTR, reg_mem_ref_ptr);
-    // store mem_ref_t->addr
+    // store address in free_reg to mem_ref_t->addr
     MINSERT(ilist, where,
             XINST_CREATE_store(
                 drcontext, OPND_CREATE_MEMPTR(reg_mem_ref_ptr, offsetof(mem_ref_t, addr)),
                 opnd_create_reg(free_reg)));
 
 
-    // store mem_ref_t->size
+    //get the size and store it into free_reg
     MINSERT(ilist, where,
             XINST_CREATE_load_int(drcontext, opnd_create_reg(free_reg),
                                   OPND_CREATE_CCT_INT(drutil_opnd_mem_size_in_bytes(ref, where))));
+    // store size in free_reg to mem_ref_t->size
     MINSERT(ilist, where,
             XINST_CREATE_store(drcontext, OPND_CREATE_MEMPTR(reg_mem_ref_ptr, offsetof(mem_ref_t, size)),
                              opnd_create_reg(free_reg)));
@@ -797,18 +820,22 @@ static inline bool IsFloatInstructionAndOkToApproximate(instr_t* instr) {
 void
 InstrumentInsCallback(void *drcontext, instr_instrument_msg_t *instrument_msg)
 {
-
+    //basic block
     instrlist_t *bb = instrument_msg->bb;
+    //instrcution information
     instr_t *instr = instrument_msg->instr;
+    //insrtuction index information
     int32_t slot = instrument_msg->slot;
 
     int num = 0;
     int num_write = 0;
-
+    // when an insturction's destination (where it will write to) is memory reference
+    // it is a memoru write instuction, then we need to Instrument it
     for (int i = 0; i < instr_num_dsts(instr); i++) {
         if (opnd_is_memory_reference(instr_get_dst(instr, i))) { //dst = write
             num++;
             num_write++;
+            //instrument the memory
             InstrumentMem(drcontext, bb, instr, instr_get_dst(instr, i));
         }
     }
@@ -816,13 +843,14 @@ InstrumentInsCallback(void *drcontext, instr_instrument_msg_t *instrument_msg)
     bool IsFloat;
     int IsCld = 0;
 
+    //Filter out some instructions that cannot be recognized
     int op = instr_get_opcode(instr);
-    IsFloat = IsDoubleOrFloat(op);
-    FloatInstrAndOkToAppx = IsFloatInstructionAndOkToApproximate(instr);
     if (op == OP_cld){
         IsCld = 1;
     }
-    
+    // check the date type of the instruction (int or float) and (float or double) 
+    IsFloat = IsDoubleOrFloat(op);
+    FloatInstrAndOkToAppx = IsFloatInstructionAndOkToApproximate(instr);
     int float_instr_and_ok_to_appx; 
     int is_float;
 
@@ -837,7 +865,7 @@ InstrumentInsCallback(void *drcontext, instr_instrument_msg_t *instrument_msg)
     }else{
         float_instr_and_ok_to_appx = 0;
     }
-   
+    //insert the analusis function and its arguments
     dr_insert_clean_call(drcontext, bb, instr, (void *)InsertCleancall, false, 6,
                          OPND_CREATE_CCT_INT(slot), OPND_CREATE_CCT_INT(num), OPND_CREATE_CCT_INT(num_write), 
                          OPND_CREATE_CCT_INT(float_instr_and_ok_to_appx), OPND_CREATE_CCT_INT(is_float), OPND_CREATE_CCT_INT(IsCld));
@@ -905,7 +933,7 @@ static void PrintApproxRedundancyPairs(void * drcontext, int threadId) {
                 continue;
             }
 
-            bool ct1 = drcctlib_have_same_source_linee(dead,(*tmpIt).dead);
+            bool ct1 = drcctlib_have_same_source_line(dead,(*tmpIt).dead);
             bool ct2 = drcctlib_have_same_source_line(kill,(*tmpIt).kill);
             if(ct1 && ct2){
                 (*tmpIt).bytes += (*it).second.bytes;
@@ -957,44 +985,46 @@ static void PrintApproxRedundancyPairs(void * drcontext, int threadId) {
     }
 }
 
-#ifdef SAMPLE_RUN
-void
-InstrumentBBStartInsertCallback(void *drcontext, int32_t slot_num, int32_t mem_ref_num)
-{
-    per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
-    uint32_t tot_num = pt->instr_num;
-    bool flag = pt->sample_mem;
+// #ifdef SAMPLE_RUN
+// void
+// InstrumentBBStartInsertCallback(void *drcontext, int32_t slot_num, int32_t mem_ref_num)
+// {
+//     per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
+//     uint32_t tot_num = pt->instr_num;
+//     bool flag = pt->sample_mem;
 
 
-    if(flag){
-        tot_num += mem_ref_num;
-        if(tot_num > WINDOW_ENABLE){
-            flag = false;
-            tot_num = 0;
-        }
-    }else{
-        tot_num += mem_ref_num;
-        if(tot_num > WINDOW_DISABLE){
-            flag = true;
-            tot_num = 0;
-        }
-    }
+//     if(flag){
+//         tot_num += mem_ref_num;
+//         if(tot_num > WINDOW_ENABLE){
+//             flag = false;
+//             tot_num = 0;
+//         }
+//     }else{
+//         tot_num += mem_ref_num;
+//         if(tot_num > WINDOW_DISABLE){
+//             flag = true;
+//             tot_num = 0;
+//         }
+//     }
 
-    pt->sample_mem = flag;
-    pt->instr_num = tot_num;
+//     pt->sample_mem = flag;
+//     pt->instr_num = tot_num;
 
-}
-#endif
+// }
+// #endif
 
 static void
 ClientThreadStart(void *drcontext)
 {
+    //malloc space for pt(per thread structure)
     per_thread_t *pt = (per_thread_t *)dr_thread_alloc(drcontext, sizeof(per_thread_t));
     if (pt == NULL) {
         DRCCTLIB_EXIT_PROCESS("pt == NULL");
     }
+    //set the place for pt in drcontext
     drmgr_set_tls_field(drcontext, tls_idx, (void *)pt);
-
+    //initilized the values in pt
     pt->cur_buf = dr_get_dr_segment_base(tls_seg);
     pt->cur_buf_list =
         (mem_ref_t *)dr_global_alloc(TLS_MEM_REF_BUFF_SIZE * sizeof(mem_ref_t));
@@ -1007,7 +1037,9 @@ ClientThreadStart(void *drcontext)
 static void
 ClientThreadEnd(void *drcontext)
 {
+    // get pt
     per_thread_t *pt = (per_thread_t *)drmgr_get_tls_field(drcontext, tls_idx);
+    //free the memory spave in pt
     dr_global_free(pt->cur_buf_list, TLS_MEM_REF_BUFF_SIZE * sizeof(mem_ref_t));
     dr_thread_free(drcontext, pt, sizeof(per_thread_t));
 
@@ -1015,6 +1047,7 @@ ClientThreadEnd(void *drcontext)
     
     // need lock for drcctlib_have_same_source_line
     dr_mutex_lock(lock);
+    //print out the redundancy information
     PrintRedundancyPairs(drcontext, threadID);
     PrintApproxRedundancyPairs(drcontext, threadID);
     dr_mutex_unlock(lock);
@@ -1026,14 +1059,17 @@ ClientThreadEnd(void *drcontext)
 static void
 ClientInit(int argc, const char *argv[])
 {
+    //Create a log file name 
     char name[MAXIMUM_PATH] = "";
     DRCCTLIB_INIT_LOG_FILE_NAME(name, "red", "out");
+    //set the output txt tgile 
     gTraceFile = dr_open_file(name, DR_FILE_WRITE_OVERWRITE | DR_FILE_ALLOW_LARGE);
     DR_ASSERT(gTraceFile != INVALID_FILE);
+    //write the head
     dr_fprintf(gTraceFile, "ClientInit\n");
-#ifdef SAMPLE_RUN
-    dr_fprintf(gTraceFile, "SAMPLING ON\n");
-#endif
+// #ifdef SAMPLE_RUN
+//     dr_fprintf(gTraceFile, "SAMPLING ON\n");
+// #endif
     lock = dr_mutex_create();
     
 }
@@ -1044,7 +1080,7 @@ ClientExit(void)
     // add output module here
     dr_fprintf(gTraceFile, "ClientExit\n");
     drcctlib_exit();
-
+    // unregister the modules
     if (!dr_raw_tls_cfree(tls_offs, INSTRACE_TLS_COUNT)) {
         DRCCTLIB_EXIT_PROCESS(
             "ERROR: drcctlib_memory_with_addr_and_refsize_clean_call dr_raw_tls_calloc fail");
@@ -1060,6 +1096,7 @@ ClientExit(void)
         DRCCTLIB_PRINTF("failed to exit drreg");
     }
     drutil_exit();
+    //destory the lock
     dr_mutex_destroy(lock);
 }
 
@@ -1067,6 +1104,8 @@ ClientExit(void)
 bool
 CustomFilter(instr_t *instr)
 {
+    //Instructions filter, only return the instructions that write to memory
+    //*** For LoadSpy *** : return the instructions that read from memory
     return (instr_writes_memory(instr));
 }
 
@@ -1084,38 +1123,50 @@ dr_client_main(client_id_t id, int argc, const char *argv[])
                        "http://dynamorio.org/issues");
     ClientInit(argc, argv);
 
+    // Initializes the drmgr extension. Must be called prior to any of the other routines
     if (!drmgr_init()) {
         DRCCTLIB_EXIT_PROCESS("ERROR: drcctlib_memory_with_addr_and_refsize_clean_call "
                               "unable to initialize drmgr");
     }
+
+    //Specifies the options when initializing drreg.
     drreg_options_t ops = { sizeof(ops), 4 /*max slots needed*/, false };
+    //Initializes the drreg extension. Must be called prior to any of the other routines.
     if (drreg_init(&ops) != DRREG_SUCCESS) {
         DRCCTLIB_EXIT_PROCESS("ERROR: drcctlib_memory_with_addr_and_refsize_clean_call "
                               "unable to initialize drreg");
     }
+    //Initializes the Instrumentation Utilities extension.
     if (!drutil_init()) {
         DRCCTLIB_EXIT_PROCESS("ERROR: drcctlib_memory_with_addr_and_refsize_clean_call "
                               "unable to initialize drutil");
     }
+    // register the thread init function (what will do when a thread starts)
     drmgr_register_thread_init_event(ClientThreadStart);
+    // register the thread end function (what will do when a thread ends)
     drmgr_register_thread_exit_event(ClientThreadEnd);
 
+    //Reserves a thread-local storage (tls) slot for every thread. Returns the index of the slot.(tls_idx) 
     tls_idx = drmgr_register_tls_field();
     if (tls_idx == -1) {
         DRCCTLIB_EXIT_PROCESS("ERROR: drcctlib_memory_with_addr_and_refsize_clean_call "
                               "drmgr_register_tls_field fail");
     }
+
+    //Create a set of (TLS) slots that can be directly accessed via tls_seg and tls_offs
     if (!dr_raw_tls_calloc(&tls_seg, &tls_offs, INSTRACE_TLS_COUNT, 0)) {
         DRCCTLIB_EXIT_PROCESS(
             "ERROR: drcctlib_memory_with_addr_and_refsize_clean_call dr_raw_tls_calloc fail");
     }
-#ifdef SAMPLE_RUN
-    drcctlib_init_ex(CustomFilter, INVALID_FILE,
-                     InstrumentInsCallback, InstrumentBBStartInsertCallback, NULL,
-                     DRCCTLIB_DEFAULT);
-#else
+// #ifdef SAMPLE_RUN
+//     drcctlib_init_ex(CustomFilter, INVALID_FILE,
+//                      InstrumentInsCallback, InstrumentBBStartInsertCallback, NULL,
+//                      DRCCTLIB_DEFAULT);
+// #else
     drcctlib_init(CustomFilter, INVALID_FILE, InstrumentInsCallback, false);
-#endif
+// #endif
+
+    //register the clinet exit event (what will do when client ends)
     dr_register_exit_event(ClientExit);
 }
 
