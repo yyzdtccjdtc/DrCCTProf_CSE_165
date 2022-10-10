@@ -251,7 +251,14 @@ struct RedSpyAnalysis{
             }
             *((T*)(shadowAddr)) = cur_value;
         }
-        
+        //*** For LoadSpy *** : 
+        //1. read the value by using the addr and memory operation size
+        //2. if this is the first access of this memory address, create the shawdow memory for it 
+        //   store it into shadow memory
+        //3. if this is't the first access of this memory address, reaf the previous value frome 
+        //   shawdow memory. If the current value is same or approx same with the previous value 
+        //   add the redundact pair into redendant table. If the current value is different
+        //   with the previous value, just update the value in the shawdow memory.
     }
     
     static void CheckNByteValueAfterWrite(void* opAddr, void* drcontext, context_handle_t cur_ctxt_hndl, uint32_t memOp){
